@@ -6,7 +6,7 @@ session_start();
 // Periksa apakah pengguna telah login
 if (!isset($_SESSION['username'])) {
     // Jika belum login, arahkan kembali ke halaman index.php
-    header("location: login.php");
+    header("location: index.html");
     exit();
 
 }
