@@ -20,11 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: dashboard.php");
     } else {
         // Jika data tidak ditemukan, arahkan ke index.php
-        header("location: login.php");
+        header("location: index.html");
     }
 } else {
     // Jika halaman diakses langsung tanpa melalui form login, arahkan ke index.php
-    header("location: login.php");
+    header("location: index.html");
 }
 
 
@@ -39,7 +39,7 @@ if (password_verify($password, $row['password'])) {
     exit();
 } else {
     // Password tidak sesuai
-    header("Location: login.php?error=invalid");
+    header("Location:index.html?error=invalid");
     exit();
 }
 ?>
